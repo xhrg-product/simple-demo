@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: "/demo-service"
+  shutdown: graceful #开启优雅停机,默认是立即停机
+spring:
+  application:
+    name: "demo-service"
+  datasource:
+    url: "jdbc:mysql://localhost/demo_db"
+    username: "root"
+    password: "123456"
+  redis:
+    host: 127.0.0.1
+    database: 0
+    port: 6379
+    password:
